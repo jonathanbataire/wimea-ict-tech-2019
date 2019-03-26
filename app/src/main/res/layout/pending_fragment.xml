@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.ContentFrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PendingFragment">
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:id="@+id/head"
+      android:layout_height="wrap_content"
+      android:theme="@style/AppTheme.AppBarOverlay">
+
+      <android.support.v7.widget.Toolbar
+        android:id="@+id/frag_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.YourPopup" />
+
+    </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:id="@+id/container">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        //Your content here
+      </LinearLayout>
+
+      <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/progress" />
+    </RelativeLayout>
+
+    <ScrollView
+      android:id="@+id/pendingscroll_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_above="@+id/footer"
+      android:layout_below="@+id/head"
+      android:fillViewport="true">
+
+      <FrameLayout
+        android:id="@+id/show"
+        android:layout_width="match_parent"
+        android:background="@drawable/layout_bg"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+          android:id="@+id/recycleViewContainer"
+          android:visibility="gone"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true"/>
+
+
+        <TextView
+          android:id="@+id/empty_list"
+          android:text="No Records Found"
+          android:gravity="center"
+          android:layout_marginTop="190sp"
+          android:textColor="#BBBBBB"
+          android:textSize="20dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+
+      </FrameLayout>
+
+    </ScrollView>
+
+  </RelativeLayout>
+</android.support.v7.widget.ContentFrameLayout>

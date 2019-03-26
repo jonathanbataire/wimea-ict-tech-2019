@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.ContentFrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditFragment">
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:id="@+id/head"
+      android:layout_height="wrap_content"
+      android:theme="@style/AppTheme.AppBarOverlay">
+
+      <android.support.v7.widget.Toolbar
+        android:id="@+id/edit_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.YourPopup" />
+
+    </RelativeLayout>
+
+    <ScrollView
+      android:id="@+id/pendingscroll_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_above="@+id/footer"
+      android:layout_below="@+id/head"
+      android:fillViewport="true">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/layout_bg"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/page_1"/>
+        <include layout="@layout/page_2"/>
+        <include layout="@layout/page_3"/>
+        <include layout="@layout/page_4"/>
+        <include layout="@layout/page_5"/>
+
+      </LinearLayout>
+
+    </ScrollView>
+
+  </RelativeLayout>
+</android.support.v7.widget.ContentFrameLayout>

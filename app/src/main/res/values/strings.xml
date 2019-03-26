@@ -1,0 +1,211 @@
+<resources>
+  <string name="app_name">wimea wdr</string>
+
+  <!-- Strings related to login -->
+  <string name="prompt_username">Username</string>
+  <string name="prompt_password">Password </string>
+  <string name="action_sign_in">Sign in or register</string>
+  <string name="action_sign_in_short">Sign in</string>
+  <string name="error_invalid_email">This email address is invalid</string>
+  <string name="error_invalid_password">This password is too short</string>
+  <string name="error_incorrect_password">This password is incorrect</string>
+  <string name="error_field_required">This field is required</string>
+  <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+  <string name="title_activity_observationslip">Observationslip</string>
+  <string name="title_activity_example">Example</string>
+  <string name="navigation_drawer_open">Open navigation drawer</string>
+  <string name="navigation_drawer_close">Close navigation drawer</string>
+  <string name="nav_header_title">Android Studio</string>
+  <string name="nav_header_subtitle">android.studio@android.com</string>
+  <string name="nav_header_desc">Navigation header</string>
+  <string name="action_settings">Settings</string>
+
+  <string name="category_prompt">Time Category</string>
+  <string name="normal_prompt">Normal Time</string>
+  <string name="tm_all_clouds_prompt">Total Amount Of All Clouds</string>
+  <string name="tm_low_clouds_prompt">Total Amount Of Low Clouds</string>
+
+  <string name="low_clouds_t1_prompt">Low Cloud Type1</string>
+  <string name="low_clouds_t2_prompt">Low Cloud Type2</string>
+  <string name="low_clouds_t3_prompt">Low Cloud Type3</string>
+  <string name="low_clouds_ok1_prompt">Low Cloud Oktas1</string>
+  <string name="low_clouds_ok2_prompt">Low Cloud Oktas2</string>
+  <string name="low_clouds_ok3_prompt">Low Cloud Oktas3</string>
+  <string name="low_clouds_clcode1_prompt">Low Cloud clCode1</string>
+  <string name="low_clouds_clcode2_prompt">Low Cloud clCode2</string>
+  <string name="low_clouds_clcode3_prompt">Low Cloud clCode3</string>
+
+  <string name="m_clouds_t1_prompt">Medium Cloud Type1</string>
+  <string name="m_clouds_t2_prompt">Medium Cloud Type2</string>
+  <string name="m_clouds_t3_prompt">Medium Cloud Type3</string>
+  <string name="m_clouds_ok1_prompt">Medium Cloud Oktas1</string>
+  <string name="m_clouds_ok2_prompt">Medium Cloud Oktas2</string>
+  <string name="m_clouds_ok3_prompt">Medium Cloud Oktas3</string>
+  <string name="m_clouds_clcode1_prompt">Medium Cloud clCode1</string>
+  <string name="m_clouds_clcode2_prompt">Medium Cloud clCode2</string>
+  <string name="m_clouds_clcode3_prompt">Medium Cloud clCode3</string>
+
+  <string name="h_clouds_t1_prompt">High Cloud Type1</string>
+  <string name="h_clouds_t2_prompt">High Cloud Type2</string>
+  <string name="h_clouds_t3_prompt">High Cloud Type3</string>
+  <string name="h_clouds_ok1_prompt">High Cloud Oktas1</string>
+  <string name="h_clouds_ok2_prompt">High Cloud Oktas2</string>
+  <string name="h_clouds_ok3_prompt">High Cloud Oktas3</string>
+  <string name="h_clouds_clcode1_prompt">High Cloud clCode1</string>
+  <string name="h_clouds_clcode2_prompt">High Cloud clCode2</string>
+  <string name="h_clouds_clcode3_prompt">High Cloud clCode3</string>
+  <string name="cloud_searchlight_alidade_reading_hint">Cloud Searchlight Alidade Reading</string>
+  <string name="rainfall_mm">Rainfall(mm)</string>
+  <string name="present_weather_prompt">Present Weather</string>
+  <string name="unit_wind_speed_prompt">Unit of Wind Speed</string>
+  <string name="precipitation_prompt">Ind. or Omission of Precipitation</string>
+  <string name="present_and_past_prompt">Type of Station/Present &amp; Past Weather</string>
+  <string name="height_of_lowest_prompt">Height of Lowest Cloud</string>
+
+
+  <string-array name="present_weather_array">
+    <item> </item>
+    <item>FG</item>
+    <item>HZ</item>
+    <item>TS</item>
+    <item>LL</item>
+    <item>BR</item>
+    <item>GR</item>
+    <item>DZ</item>
+    <item>RA</item>
+  </string-array>
+
+
+  <string-array name="low_clcode_array">
+    <item> </item>
+    <item>Sc</item>
+    <item>St</item>
+    <item>Cu</item>
+    <item>Cb</item>
+  </string-array>
+  <string-array name="m_clcode_array">
+    <item> </item>
+    <item>Ac</item>
+    <item>As</item>
+    <item>Ns</item>
+  </string-array>
+
+  <string-array name="h_clcode_array">
+    <item> </item>
+    <item>Cl</item>
+    <item>Cc</item>
+    <item>Cs</item>
+  </string-array>
+  <string-array name="one_to_three_array">
+    <item> </item>
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+  </string-array>
+  <string-array name="one_to_six_array">
+    <item> </item>
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+  </string-array>
+
+  <string-array name="zero_to_nine_array">
+    <item> </item>
+    <item>0</item>
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+    <item>7</item>
+    <item>8</item>
+    <item>9</item>
+  </string-array>
+
+  <string-array name="one_to_ten_array">
+    <item> </item>
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+    <item>7</item>
+    <item>8</item>
+    <item>9</item>
+    <item>10</item>
+  </string-array>
+  <string-array name="zero_to_eight_array">
+    <item> </item>
+    <item>0</item>
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+    <item>7</item>
+    <item>8</item>
+  </string-array>
+
+  <string-array name="time_array">
+    <item>normal</item>
+    <item>speci</item>
+  </string-array>
+  <string-array name="normal_array">
+    <item>00:00Z</item>
+    <item>00:30Z</item>
+    <item>01:00Z</item>
+    <item>01:30Z</item>
+    <item>02:00Z</item>
+    <item>02:30Z</item>
+    <item>03:00Z</item>
+    <item>03:30Z</item>
+    <item>04:00Z</item>
+    <item>04:30Z</item>
+    <item>05:00Z</item>
+    <item>05:30Z</item>
+    <item>06:00Z</item>
+    <item>06:30Z</item>
+    <item>07:00Z</item>
+    <item>07:30Z</item>
+    <item>08:00Z</item>
+    <item>08:30Z</item>
+    <item>09:00Z</item>
+    <item>09:30Z</item>
+    <item>10:00Z</item>
+    <item>10:30Z</item>
+    <item>11:00Z</item>
+    <item>11:30Z</item>
+    <item>12:00Z</item>
+    <item>12:30Z</item>
+    <item>13:00Z</item>
+    <item>13:30Z</item>
+    <item>14:00Z</item>
+    <item>14:30Z</item>
+    <item>15:00Z</item>
+    <item>15:30Z</item>
+    <item>16:00Z</item>
+    <item>16:30Z</item>
+    <item>17:00Z</item>
+    <item>17:30Z</item>
+    <item>18:00Z</item>
+    <item>18:30Z</item>
+    <item>19:00Z</item>
+    <item>19:30Z</item>
+    <item>20:00Z</item>
+    <item>20:30Z</item>
+    <item>21:00Z</item>
+    <item>21:30Z</item>
+    <item>22:00Z</item>
+    <item>22:30Z</item>
+    <item>23:00Z</item>
+    <item>23:30Z</item>
+  </string-array>
+</resources>

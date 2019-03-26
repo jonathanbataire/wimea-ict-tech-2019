@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#56a5db</color>
+  <color name="colorPrimaryDark">#282828</color>
+  <color name="colorAccent">#56a5db</color>
+  <color name="toolbar_color_dark">#FF2C2C2C</color>
+  <color name="background_material_light">#282828</color>
+  <color name="popup_white">#ffffff</color>
+  <color name="text_black">#000000</color>
+  <color name="status">#509acd</color>
+  <color name="success">#5cb85c</color>
+  <color name="warning">#d9534f</color>
+</resources>

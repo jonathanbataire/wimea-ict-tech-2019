@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:showIn="navigation_view">
+
+  <group>
+    <item
+      android:id="@+id/form"
+      android:icon="@drawable/ic_action_form"
+      android:title="Submit Form" />
+    <item
+      android:id="@+id/rPending"
+      android:icon="@drawable/ic_action_pending"
+      android:title="Pending Records" />
+    <item
+      android:id="@+id/logout"
+      android:icon="@drawable/ic_action_logout"
+      android:title="Log Out" />
+
+  </group>
+
+</menu>

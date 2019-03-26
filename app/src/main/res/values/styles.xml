@@ -1,0 +1,30 @@
+<resources>
+
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+
+  <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+  <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" >
+    <item name="actionMenuTextColor">#ffffff</item>
+  </style>
+
+  <style name="AppTheme.YourPopup"  parent="ThemeOverlay.AppCompat.Light">
+    <item name="android:colorBackground">@color/popup_white</item>
+    <item name="android:textColorPrimary">#000000</item>
+  </style>
+
+  <style name="datepicker" parent="Theme.AppCompat.Light.Dialog">
+    <item name="colorPrimary">@color/colorAccent</item>
+    <item name="colorPrimaryDark">#FF509ACD</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+
+
+
+</resources>

@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+  android:id="@+id/layout5"
+  android:orientation="vertical"
+  android:background="@drawable/layout_bg"
+  android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/loginform"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_marginRight="8dp"
+      android:layout_marginTop="@dimen/loginform"
+      android:layout_marginBottom="4dp"
+      android:focusable="true"
+      android:focusableInTouchMode="true"
+      android:layout_marginLeft="8dp"
+      android:layout_gravity="center_vertical"
+      android:orientation="vertical"
+      android:layout_height="match_parent">
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+        <android.support.design.widget.TextInputLayout
+          android:layout_width="wrap_content"
+          android:layout_weight="1"
+          android:orientation="vertical"
+          android:paddingBottom="0dp"
+          android:layout_gravity="bottom"
+          android:layout_marginRight="3dp"
+          android:layout_height="wrap_content">
+
+          <TextView
+            android:layout_width="match_parent"
+            android:gravity="top"
+            android:paddingLeft="4dp"
+            android:textSize="11dp"
+            android:layout_weight="1"
+            android:text="@string/unit_wind_speed_prompt"
+            android:layout_height="wrap_content" />
+
+          <Spinner
+            android:id="@+id/spunit_wind"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:paddingTop="1dp"
+            android:textSize="11dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:spinnerMode="dialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:entries="@array/one_to_six_array"
+            android:prompt="@string/unit_wind_speed_prompt"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+          android:layout_width="wrap_content"
+          android:layout_weight="3"
+          android:orientation="vertical"
+          android:paddingBottom="0dp"
+          android:layout_gravity="bottom"
+          android:layout_marginRight="3dp"
+          android:layout_height="wrap_content">
+
+          <TextView
+            android:layout_width="match_parent"
+            android:gravity="top"
+            android:paddingLeft="4dp"
+            android:textSize="11dp"
+            android:layout_weight="1"
+            android:text="@string/precipitation_prompt"
+            android:layout_height="wrap_content" />
+
+          <Spinner
+            android:id="@+id/spind_omission"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:paddingTop="1dp"
+            android:textSize="11dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:spinnerMode="dialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:entries="@array/one_to_three_array"
+            android:prompt="@string/precipitation_prompt"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+      </LinearLayout>
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+        <android.support.design.widget.TextInputLayout
+          android:layout_width="wrap_content"
+          android:layout_weight="1"
+          android:orientation="vertical"
+          android:paddingBottom="0dp"
+          android:layout_gravity="bottom"
+          android:layout_marginRight="3dp"
+          android:layout_height="wrap_content">
+
+          <TextView
+            android:layout_width="match_parent"
+            android:gravity="top"
+            android:paddingLeft="4dp"
+            android:textSize="11dp"
+            android:layout_weight="1"
+            android:text="@string/present_and_past_prompt"
+            android:layout_height="wrap_content" />
+
+          <Spinner
+            android:id="@+id/sptype_of_station"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:paddingTop="1dp"
+            android:textSize="11dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:spinnerMode="dialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:entries="@array/one_to_three_array"
+            android:prompt="@string/present_and_past_prompt"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+          android:id="@+id/spinner_cover1"
+          android:layout_width="wrap_content"
+          android:layout_weight="3"
+          android:orientation="vertical"
+          android:paddingBottom="0dp"
+          android:layout_gravity="bottom"
+          android:layout_marginRight="3dp"
+          android:layout_height="wrap_content">
+
+          <TextView
+            android:layout_width="match_parent"
+            android:gravity="top"
+            android:paddingLeft="4dp"
+            android:textSize="11dp"
+            android:layout_weight="1"
+            android:text="@string/height_of_lowest_prompt"
+            android:layout_height="wrap_content" />
+
+          <Spinner
+            android:id="@+id/spheight_lowest"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:paddingTop="1dp"
+            android:textSize="11dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:spinnerMode="dialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:entries="@array/one_to_ten_array"
+            android:prompt="@string/height_of_lowest_prompt"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+      </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+  </android.support.v7.widget.CardView>
+
+  <android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_marginLeft="@dimen/loginform"
+    android:layout_marginBottom="@dimen/loginform"
+    android:layout_marginRight="@dimen/loginform"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_marginRight="8dp"
+      android:layout_marginTop="3dp"
+      android:focusable="true"
+      android:focusableInTouchMode="true"
+      android:layout_marginLeft="8dp"
+      android:layout_gravity="center_vertical"
+      android:orientation="vertical"
+      android:layout_height="match_parent">
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginBottom="4dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+          android:layout_width="wrap_content"
+          android:layout_weight="1"
+          android:layout_marginLeft="3dp"
+          android:layout_height="wrap_content">
+
+          <EditText
+            android:id="@+id/standard_isobaric"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Standard Isobaric Surface"
+            android:textSize="@dimen/formTextSize"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+          android:layout_width="wrap_content"
+          android:layout_weight="1"
+          android:layout_marginLeft="3dp"
+          android:layout_height="wrap_content">
+
+          <EditText
+            android:id="@+id/geopotential"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Geopotential of Standard Isoberic Surface"
+            android:textSize="@dimen/formTextSize"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+      </LinearLayout>
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputLayout
+          android:layout_width="wrap_content"
+          android:layout_weight="1"
+          android:layout_marginLeft="3dp"
+          android:layout_marginRight="3dp"
+          android:layout_height="wrap_content">
+
+          <EditText
+            android:id="@+id/precipitation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Duration of Period of Precipitation"
+            android:textSize="@dimen/formTextSize"
+            android:inputType="textNoSuggestions"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+
+  </android.support.v7.widget.CardView>
+
+  <android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_marginLeft="@dimen/loginform"
+    android:layout_marginBottom="@dimen/loginform"
+    android:layout_marginRight="@dimen/loginform"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_marginRight="8dp"
+      android:layout_marginTop="3dp"
+      android:focusable="true"
+      android:focusableInTouchMode="true"
+      android:layout_marginLeft="8dp"
+      android:layout_gravity="center_vertical"
+      android:orientation="vertical"
+      android:layout_height="match_parent">
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginBottom="4dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+          android:layout_width="wrap_content"
+          android:layout_weight="1.5"
+          android:layout_marginLeft="3dp"
+          android:layout_height="wrap_content">
+
+          <EditText
+            android:id="@+id/grass_min"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Grass Minimum Temperature"
+            android:textSize="@dimen/formTextSize"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+          android:layout_width="wrap_content"
+          android:layout_weight="2"
+          android:layout_marginLeft="3dp"
+          android:layout_height="wrap_content">
+
+          <EditText
+            android:id="@+id/character"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Character &amp; Intensity of Precipitation"
+            android:textSize="@dimen/formTextSize"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+      </LinearLayout>
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginBottom="4dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+          android:layout_width="wrap_content"
+          android:layout_weight="1"
+          android:layout_marginLeft="3dp"
+          android:layout_height="wrap_content">
+
+          <EditText
+            android:id="@+id/beginning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Beginning or End of Precipitation"
+            android:textSize="@dimen/formTextSize"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+          android:layout_width="wrap_content"
+          android:layout_weight="1"
+          android:layout_marginLeft="3dp"
+          android:layout_height="wrap_content">
+
+          <EditText
+            android:id="@+id/indication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Indicator of Type of Intrumentation"
+            android:textSize="@dimen/formTextSize"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+
+  </android.support.v7.widget.CardView>
+  <android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_marginLeft="@dimen/loginform"
+    android:layout_marginBottom="@dimen/loginform"
+    android:layout_marginRight="@dimen/loginform"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_marginRight="8dp"
+      android:layout_marginTop="3dp"
+      android:focusable="true"
+      android:focusableInTouchMode="true"
+      android:layout_marginLeft="8dp"
+      android:layout_gravity="center_vertical"
+      android:orientation="vertical"
+      android:layout_height="match_parent">
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginBottom="4dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+          android:layout_width="wrap_content"
+          android:layout_weight="1"
+          android:layout_marginLeft="3dp"
+          android:layout_height="wrap_content">
+
+          <EditText
+            android:id="@+id/sign_pressure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sign of Pressure Change"
+            android:textSize="@dimen/formTextSize"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+          android:layout_width="wrap_content"
+          android:layout_weight="1"
+          android:layout_marginLeft="3dp"
+          android:layout_height="wrap_content">
+
+          <EditText
+            android:id="@+id/suplimentary_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Suplimentary Information"
+            android:textSize="@dimen/formTextSize"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+      </LinearLayout>
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginBottom="4dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+          android:layout_width="wrap_content"
+          android:layout_weight="1"
+          android:layout_marginLeft="3dp"
+          android:layout_height="wrap_content">
+
+          <EditText
+            android:id="@+id/vapor_pressure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vapor Pressure"
+            android:textSize="@dimen/formTextSize"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+          android:layout_width="wrap_content"
+          android:layout_weight="1"
+          android:layout_marginLeft="3dp"
+          android:layout_height="wrap_content">
+
+          <EditText
+            android:id="@+id/th_graph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TH Graph"
+            android:textSize="@dimen/formTextSize"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+
+  </android.support.v7.widget.CardView>
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_gravity="bottom"
+    android:orientation="horizontal"
+    android:layout_height="55dp">
+    <TextView
+      android:layout_width="0dp"
+      android:visibility="invisible"
+      android:layout_weight="2"
+      android:layout_height="0dp" />
+
+    <Button
+      android:id="@+id/back_page4"
+      android:background="@drawable/button_back"
+      android:textColor="@color/popup_white"
+      android:textSize="12dp"
+      android:layout_marginRight="12dp"
+      android:layout_width="70dp"
+      android:layout_gravity="center"
+      android:layout_height="30dp"
+      android:text="back"/>
+
+    <TextView
+      android:layout_width="0dp"
+      android:visibility="invisible"
+      android:layout_weight="1"
+      android:layout_height="0dp" />
+
+
+    <Button
+      android:id="@+id/submit"
+      android:background="@drawable/button_next"
+      android:textColor="@color/popup_white"
+      android:textSize="12dp"
+      android:layout_marginRight="12dp"
+      android:layout_width="70dp"
+      android:layout_gravity="center"
+      android:layout_height="30dp"
+      android:text="Submit"/>
+    <TextView
+      android:layout_width="0dp"
+      android:visibility="invisible"
+      android:layout_weight="2"
+      android:layout_height="0dp" />
+
+
+  </LinearLayout>
+
+
+</LinearLayout>
