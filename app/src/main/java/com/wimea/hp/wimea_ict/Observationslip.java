@@ -103,8 +103,8 @@ public class Observationslip extends AppCompatActivity
   private String l_clcode1,l_clcode2,l_clcode3,userid;
 
   private Spinner sppresent_weather;
-  private EditText cloud_searchlight,rainfall_mm,present_weather_code,past_weather,visibility,gusting,wind_direction,wind_speed,sun_duration,dry_bulb,wet_bulb;
-  private String input_cloud_searchlight,input_rainfall_mm,input_present_weather_code,input_past_weather,input_visibility,input_gusting;
+  private EditText cloud_searchlight,rainfall_mm,present_weather_code,past_weather,past_weather_code,visibility,gusting,wind_direction,wind_speed,sun_duration,dry_bulb,wet_bulb;
+  private String input_cloud_searchlight,input_rainfall_mm,input_present_weather_code,input_past_weather,input_past_weather_code,input_visibility,input_gusting;
   private String input_wind_direction,input_wind_speed,input_sun_duration,input_dry_bulb,input_wet_bulb,input_present_weather;
 
   private EditText attd_thermo,correction,pr_as_read,clp,mslp,time_marks_b,time_marks_a,remarks,other_tmarks;
@@ -296,7 +296,9 @@ public class Observationslip extends AppCompatActivity
     present_weather_code = findViewById(R.id.present_weather_code);
     onlyTextValidator(present_weather_code,1);
     past_weather = findViewById(R.id.past_weather);
+    past_weather_code = findViewById(R.id.past_weather_code);
     onlyTextValidator(past_weather,1);
+    onlyTextValidator(past_weather_code,1);
     visibility = findViewById(R.id.visibility);
     gusting = findViewById(R.id.gusting);
     wind_direction = findViewById(R.id.wind_direction);
@@ -985,6 +987,7 @@ public class Observationslip extends AppCompatActivity
         input_rainfall_mm = rainfall_mm.getText().toString().trim();
         input_present_weather_code = present_weather_code.getText().toString().trim();
         input_past_weather = past_weather.getText().toString().trim();
+        input_past_weather_code = past_weather_code.getText().toString().trim();
         input_visibility = visibility.getText().toString().trim();
         input_gusting = gusting.getText().toString().trim();
         input_wind_direction = wind_direction.getText().toString().trim();
@@ -1386,7 +1389,8 @@ public class Observationslip extends AppCompatActivity
     params.put("CloudSearchLightReading",input_cloud_searchlight); params.put("Rainfall",input_rainfall_mm);
     params.put("Dry_Bulb",input_dry_bulb); params.put("Wet_Bulb",input_wet_bulb);
     params.put("Present_Weather",input_present_weather); params.put("Present_WeatherCode",input_present_weather_code);
-    params.put("Past_Weather",input_past_weather); params.put("Visibility",input_visibility);
+    params.put("Past_Weather",input_past_weather);params.put("Past_Weather_code",input_past_weather_code);
+    params.put("Visibility",input_visibility);
     params.put("Wind_Direction",input_wind_direction); params.put("Wind_Speed",input_wind_speed);
     params.put("Gusting",input_gusting); params.put("AttdThermo",input_attd_thermo);
     params.put("PrAsRead",input_pr_as_read); params.put("Correction",input_correction);

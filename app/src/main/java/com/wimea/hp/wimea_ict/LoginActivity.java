@@ -123,34 +123,24 @@ public class LoginActivity extends Activity {
         try {
           JSONObject jObj = new JSONObject(response);
           boolean error = jObj.getBoolean("error");
-          String dum = "owl";
 
           // Check for error node in json
-          //if (!error) {
-          if (testdum.equals("owl")) {
+          if (!error) {
             // user successfully logged in
             // Create login session
             session.setLogin(true);
 
-            // Now store the user in SQLite
-//            String userid = jObj.getString("Userid");
-//
-//            JSONObject user = jObj.getJSONObject("user");
-//            String name = user.getString("UserName");
-//            String email = user.getString("email");
-//            String created_at = user.getString("created_at");
-//            String station_name = user.getString("station_name");
-//            String station_number = user.getString("station_number");
-//            double latitude = user.getDouble("latitude");
-//            double longitude = user.getDouble("longitude");
-            String userid = "34";
-            String name = "Owl Philly";
-            String email = "drkray50@gmail.com";
-            String created_at = "01-01-2019";
-            String station_name = "Kampala AWS";
-            String station_number = "34756";
-            double latitude = 0.347596;
-            double longitude = 32.582520;
+             //Now store the user in SQLite
+            String userid = jObj.getString("Userid");
+
+            JSONObject user = jObj.getJSONObject("user");
+            String name = user.getString("UserName");
+            String email = user.getString("email");
+            String created_at = user.getString("created_at");
+            String station_name = user.getString("station_name");
+            String station_number = user.getString("station_number");
+            double latitude = user.getDouble("latitude");
+            double longitude = user.getDouble("longitude");
 
             // Inserting row in users table
             db.addUser(name, email, userid, created_at,latitude,longitude,station_name,station_number);

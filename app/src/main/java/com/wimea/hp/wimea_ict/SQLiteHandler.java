@@ -90,6 +90,7 @@ public class SQLiteHandler extends SQLiteOpenHelper {
   private static final String KEY_Present_Weather = "Present_Weather";
   private static final String KEY_Present_WeatherCode = "Present_WeatherCode";
   private static final String KEY_Past_Weather = "Past_Weather";
+  private static final String KEY_Past_Weather_code = "Past_Weather_code";
   private static final String KEY_Visibility = "Visibility";
   private static final String KEY_Wind_Direction = "Wind_Direction";
   private static final String KEY_Wind_Speed = "Wind_Speed";
@@ -156,7 +157,7 @@ public class SQLiteHandler extends SQLiteOpenHelper {
       + KEY_TypeOfHighClouds3 + " TEXT ," + KEY_OktasOfHighClouds3 + " TEXT,"+ KEY_HeightOfHighClouds3 + " TEXT,"+ KEY_CLCODEOfHighClouds3 + " TEXT,"
 
       + KEY_searchlight + " TEXT," + KEY_Rainfall + " TEXT,"+ KEY_Dry_Bulb + " TEXT,"+ KEY_Wet_Bulb + " TEXT,"
-      + KEY_Present_Weather + " TEXT ," + KEY_Present_WeatherCode + " TEXT,"+ KEY_Past_Weather + " TEXT,"+ KEY_Visibility + " TEXT,"
+      + KEY_Present_Weather + " TEXT ," + KEY_Present_WeatherCode + " TEXT,"+ KEY_Past_Weather + " TEXT,"+ KEY_Past_Weather_code + " TEXT,"+ KEY_Visibility + " TEXT,"
       + KEY_Wind_Direction + " TEXT ," + KEY_Wind_Speed + " TEXT,"+ KEY_Gusting + " TEXT,"+ KEY_AttdThermo + " TEXT,"
 
       + KEY_PrAsRead + " TEXT," + KEY_Correction + " TEXT,"+ KEY_CLP + " TEXT,"+ KEY_MSLPr + " TEXT,"

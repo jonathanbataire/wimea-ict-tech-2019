@@ -32,8 +32,8 @@ function getRealIpAddr()
 	
 	    $station = $_POST['station_name'];
         $stationNumber = $_POST['station_number'];
-        $totalAmountOfAllClouds = $_POST['TotalAmountOfAllClouds'];
-        $totalAmountOfLowClouds = $_POST['TotalAmountOfLowClouds'];
+        $totalAmountOfAllClouds = intval($_POST['TotalAmountOfAllClouds']);
+        $totalAmountOfLowClouds = intval($_POST['TotalAmountOfLowClouds']);
 
         $TypeOfLowClouds1 = intval($_POST['TypeOfLowClouds1']);
         $OktasOfLowClouds1= intval($_POST['OktasOfLowClouds1']);
@@ -82,6 +82,7 @@ function getRealIpAddr()
         $Present_WeatherCode = $_POST['Present_WeatherCode'];
 
         $Past_Weather = $_POST['Past_Weather'];
+		$Past_WeatherCode = $_POST['Past_Weather_code'];
         $Visibility = floatval($_POST['Visibility']);
         $Wind_Direction = $_POST['Wind_Direction'];
         $Wind_Speed = $_POST['Wind_Speed'];
@@ -150,7 +151,8 @@ function getRealIpAddr()
             'CloudSearchLightReading'=> $CloudSearchLightReading,
             'Rainfall'=> $Rainfall, 'Dry_Bulb'=>$Dry_Bulb,'Wet_bulb'=> $Wet_Bulb,
             'Present_Weather'=>$Present_Weather,'Present_WeatherCode'=>$Present_WeatherCode,
-            'Past_Weather'=>$Past_Weather,'Visibility'=>$Visibility,
+            'Past_Weather'=>$Past_Weather,'Past_WeatherCode'=>$Past_WeatherCode,
+			'Visibility'=>$Visibility,
 
             'Max_temp'=>$Max_temp, 'Min_temp'=>$Min_temp,
 
@@ -198,16 +200,19 @@ function getRealIpAddr()
                         $log = $db->insertUserLogs($log_fields,$log_values);
 		
                     $response["error"] = false;
+					$response["dup_code"] = false;
                     $response["server_msg"] = "New Observation Slip Info added successfully!";
                     echo json_encode($response);
                 }
                 else{
                     $response["error"] = true;
+					$response["dup_code"] = false;
                     $response["server_msg"] ="Server Error Occurred";
                     echo json_encode($response);
                 }
             }else{
                 $response["error"] = true;
+				$response["dup_code"] = true;
                 $response["server_msg"] ="A Record for this time has Already Been Submitted";
                 echo json_encode($response);
             }

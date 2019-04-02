@@ -11,7 +11,7 @@ public class AppConfig {
       wimeaserver 196.43.133.125 google 216.58.198.238*/
   public static String SERVER_ADDRESS = "google.com";
 
-  public static int DISTANCE_FROM_STATION = 8500000;
+  public static int DISTANCE_FROM_STATION = 500;
 
 
 }

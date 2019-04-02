@@ -118,7 +118,7 @@ public class OfflineUpload extends AppCompatActivity{
             status = true;
             c++;
             try {
-              if (c<721){
+              if (c<1801){
                 BackNet Task= new BackNet();
                 Task.execute();
 
@@ -169,13 +169,13 @@ public class OfflineUpload extends AppCompatActivity{
       //net(x);
       if (x && db.numberOfRecords()>0){
         sqliteSubmit();
-        Toast.makeText(context,"yes running"+db.numberOfRecords(),Toast.LENGTH_SHORT).show();
+        //Toast.makeText(context,"yes running"+db.numberOfRecords(),Toast.LENGTH_SHORT).show();
       }
       else if (db.numberOfRecords()<1){
         stopBackgroundPerform();
       }
       else{
-        Toast.makeText(context,"No running internet"+db.numberOfRecords(),Toast.LENGTH_SHORT).show();
+        //Toast.makeText(context,"No running internet"+db.numberOfRecords(),Toast.LENGTH_SHORT).show();
       }
     }
   }

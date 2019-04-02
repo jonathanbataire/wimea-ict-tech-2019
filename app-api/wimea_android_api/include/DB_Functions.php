@@ -70,7 +70,7 @@ class DB_Functions {
     public function checkforduplicate($date,$station_id,$TIME,$metarOrSpeci){
 
         $stmt = $this->conn->prepare("SELECT * FROM observationslip where Date='".$date."' and Station='".$station_id."' and TIME='"
-        .$TIME."' and speciOrMetar='".$metarOrSpeci."' limit 1");
+        .$TIME."' and speciOrMetar='".$metarOrSpeci."' and (DeviceType='web' or DeviceType='mobile') limit 1");
 		//$stmt->bind_param("s", $email);
 		if ($stmt->execute()) {
 			 $record = $stmt->get_result()->fetch_assoc();
@@ -104,7 +104,8 @@ class DB_Functions {
 
 	
 	public function getUser($email, $password){
-		$stmt = $this->conn->prepare("SELECT * FROM systemusers left join stations on station_id = station where UserName='".$email."' and UserPassword='".$password."'");
+        $stmt = $this->conn->prepare("SELECT * FROM systemusers left join stations on station_id = station where UserName='"
+        .$email."' and UserPassword='".$password."' and (UserRole='Observer' or UserRole='OC') and Active = '1'");
 		//$stmt->bind_param("s", $email);
 		if ($stmt->execute()) {
 			 $user = $stmt->get_result()->fetch_assoc();
